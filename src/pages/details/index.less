@@ -1,0 +1,95 @@
+.detail-page {
+  height        : 100%;
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+  align-items     : center;
+  background-color: #b46e6ea4;
+
+  .image-basic() {
+    width              : 400px;
+    height             : 400px;
+    border-radius      : 400px;
+    margin             : 30px 0;
+  }
+
+  div {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+
+    text {
+      display: inline-block;
+      padding: 20px 0;
+    }
+  }
+
+  @keyframes rotation {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+  .lyric {
+    min-width       : 500px;
+    height          : 400px;
+    line-height     : 400px;
+    background-color: rgba(250, 250, 250, 0.452);
+    text-align      : center;
+    overflow        : hidden;
+    align-items     : middle;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    color           : rgba(24, 22, 22, 0.349);
+
+    text {
+      line-height: 30px;
+      height     : 30px;
+      display    : block;
+      padding    : 8px 0;
+    }
+
+    .active-lyric {
+      color: darksalmon;
+    }
+  }
+
+  .detail-image {
+    .image-basic();
+  }
+
+  .detail-image-active {
+    .image-basic();
+    transform: rotate(360deg);
+    animation: rotation 8s linear infinite;
+  }
+
+  .detail-pro {
+    width : 500px;
+    height: 10px;
+    margin: 20px 0;
+  }
+
+  .operation {
+    display        : flex;
+    justify-content: center;
+
+    .opt {
+      margin: 0 40px;
+
+      // .at-icon {
+      //   font-size: 60px !important;
+      // }
+    }
+  }
+
+  .detail-button {
+    width: 240px !important;
+  }
+}
