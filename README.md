@@ -18,7 +18,9 @@ yarn dev:weapp
 ```
 yarn build:weapp
 ```
-
+### 扫码体验
+- ![二维码](src/assets/images/qrcode.png)
+  
 ### 小程序设计目的主要包括两个模块
 - 音乐 ![首页](src/assets/images/home.jpg)
 - 诗歌 ![诗歌](src/assets/images/poetry.jpg)
